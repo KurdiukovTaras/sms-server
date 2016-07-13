@@ -11,15 +11,8 @@ public class ClientServlet extends HttpServlet {
 @Override
     public void doGet(HttpServletRequest request,HttpServletResponse response) throws ServletException, IOException {
         //getting data from the browser
-        String phonenumber=request.getParameter("phoneNumber");
+        request.getRequestDispatcher("/clientList.jsp").forward(request, response);
 
-        PrintWriter out=response.getWriter();
-        response.setContentType("text/html");
-
-    // send HTML text to browser
-    out.print("<html><body>");
-    out.print("<h2>"+phonenumber+"");
-    out.print("</body></html>");
     }
 
 }
