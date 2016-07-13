@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+#forSearch {
+    height: 120px;
+    width: 250px;
+    position: absolute;
+    top:20px;
+    left:20px;
+    background-color: #7777ff;
+}
+#sms {
+    height: 600px;
+    width: 600px;
+    position: absolute;
+    top:20px;
+    left: 260px;
+    background-color: #ee6060;
+}
+
+#clients {
+    height: 100%;
+    width: 240px;
+    position: absolute;
+    top:130px;
+    left:20px;
+    background-color: #a0a0a0;
+}
+
+
+
+#writeSms {
+    height: 140px;
+    width: 600px;
+    position: absolute;
+    top:615px;
+    left:260px;
+    background-color: #60ee60;
+}
+
+
+p {
+    background-color: #dddddd;
+    padding: 7px;
+    margin: 10px;
+}
