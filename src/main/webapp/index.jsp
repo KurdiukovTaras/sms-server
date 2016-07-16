@@ -21,26 +21,16 @@
 </div>
 
 <div id="sms">
-
-       <h1> Содержание смсок</h1>
-
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-</div>
+    <iframe src="smsList.jsp" width="600" height="600" >
+        Ваш браузер не поддерживает встроенные фреймы!
+    </iframe>
+     </div>
 
 <div id="clients">
-    <h1>
-        Клиенты:
-        <p>
-        Макс
-        <p>
-        Вениамин
-        <p>
-        Сергей
-        <p>
-        Андрей
-        <p>
-        Денис
-        </h1>
+    <iframe src="clientList.jsp" width="240" height="600" align="left">
+        Ваш браузер не поддерживает встроенные фреймы!
+    </iframe>
+
 </div>
 
 <div id="writeSms">

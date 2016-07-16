@@ -8,6 +8,19 @@
 </head>
 <body>
 <h2> Client List</h2>
+<h1>
+    Клиенты:
+    <p>
+        Макс
+    <p>
+        Вениамин
+    <p>
+        Сергей
+    <p>
+        Андрей
+    <p>
+        Денис
+</h1>
 <button onclick="window.history.back()">Cancel</button>
 </body>
 </html>
