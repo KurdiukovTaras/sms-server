@@ -9,7 +9,7 @@
     background-color: #7777ff;
 }
 #sms {
-    height: 600px;
+    height: 590px;
     width: 600px;
     position: absolute;
     top:20px;
@@ -29,8 +29,8 @@
 
 
 #writeSms {
-    height: 140px;
-    width: 600px;
+    height: 120px;
+    width: 610px;
     position: absolute;
     top:615px;
     left:260px;
