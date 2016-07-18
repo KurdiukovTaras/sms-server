@@ -27,17 +27,16 @@
      </div>
 
 <div id="clients">
-    <iframe src="clientList.jsp" name="clientName" width="240" height="600" align="left">
+    <iframe src="clientList.jsp" name="clientsName" width="240" height="600" align="left">
         Ваш браузер не поддерживает встроенные фреймы!
     </iframe>
 
 </div>
 
 <div id="writeSms">
-    <form name="test" method="get" action="writeSms">
-    <textarea name="message" cols="70" rows="4"></textarea>
-    <input type="submit" value="Отправить">
-        </form>
+    <iframe src="writeSms.jsp" name="writeSmsName" width="610" height="120" align="left">
+        Ваш браузер не поддерживает встроенные фреймы!
+    </iframe>
 </div>
 
 </body>

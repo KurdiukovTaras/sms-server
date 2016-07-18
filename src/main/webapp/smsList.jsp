@@ -10,34 +10,27 @@
     <title>Sms - server</title>
 </head>
 <body>
-<h1> Содержание смсок</h1>
 
 <form method="get" action="sms">
     <button type="submit">Отобразить все смски</button>
 </form>
 <section>
-    <table border="1" cellpadding="8" cellspacing="0">
-        <thead>
-        <tr>
-            <th>client</th>
-            <th>id</th>
-            <th>datetime</th>
-            <th>message</th>
-        </tr>
-        </thead>
+    <table border="0" cellpadding="0" cellspacing="0">
+
         <c:forEach items="${smsList}" var="sms">
             <jsp:useBean id="sms" scope="page" type="smsServer.model.Sms"/>
             <tr class="${sms.isNew?'new':'old'}">
-            <td>${sms.client.name}</td>
-            <td>${sms.id}</td>
-            <td>${sms.datetime}</td>
-            <td>${sms.message}</td>
+                <td><h2>${sms.message}</h2></td>
+            </tr>
+            <tr>
+                <td><h6>from <a href="sms?action=showsmsbyid&id=${sms.client.id}">${sms.client.name}</a></h6></td>
+                <td><h6>${sms.datetime.toLocalDateTime().toLocalTime()}</h6></td>
             </tr>
         </c:forEach>
     </table>
 </section>
 
 
-<button onclick="window.history.back()">Cancel</button>
+<%--<button onclick="window.history.back()">Cancel</button>--%>
 </body>
 </html>
