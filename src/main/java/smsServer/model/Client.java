@@ -1,8 +1,9 @@
 package smsServer.model;
 
+
 public class Client {
 
-    private int id;
+    private Integer id;
     private String name;
     private String description;
     private String phoneNumber;
@@ -29,6 +30,7 @@ public class Client {
     public String getPhoneNumber() {return phoneNumber;}
     public int getNumberOfSms() {return numberOfSms;}
     public void setId(int id) {this.id = id;}
+    public boolean isNew() {return (this.id == null);}
     public void setName(String name) {this.name = name;}
     public void setDescription(String description) {this.description = description;}
     public void setPhoneNumber(String phoneNumber) {this.phoneNumber = phoneNumber;}

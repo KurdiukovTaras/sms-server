@@ -17,7 +17,7 @@ public interface ClientRepository {
     Client get(int id);
 
     // null if not found
-    Client getByPhone(String phone);
+    Client getByPhoneNumber(String phoneNumber);
 
     List<Client> getAll();
 }

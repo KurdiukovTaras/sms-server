@@ -19,7 +19,7 @@
 
         <c:forEach items="${smsList}" var="sms">
             <jsp:useBean id="sms" scope="page" type="smsServer.model.Sms"/>
-            <tr class="${sms.isNew?'new':'old'}">
+            <tr class="${sms.readed?'new':'old'}">
                 <td><h2>${sms.message}</h2></td>
             </tr>
             <tr>

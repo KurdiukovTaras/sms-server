@@ -1,7 +1,6 @@
 package smsServer.service;
 import smsServer.model.Client;
 import smsServer.util.exception.NotFoundException;
-import java.io.NotActiveException;
 import java.util.List;
 
 public interface ClientService {
@@ -11,7 +10,7 @@ public interface ClientService {
 
     Client get(int id) throws NotFoundException;
 
-    Client getByEmail(String email) throws NotFoundException;
+    Client getByPhoneNumber(String phonenumber) throws NotFoundException;
 
     List<Client> getAll();
 

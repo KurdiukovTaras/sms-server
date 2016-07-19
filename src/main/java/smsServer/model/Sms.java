@@ -6,19 +6,19 @@ import java.sql.Timestamp;
 public class Sms
 {
     private Client client;
-    private int id;
+    private Integer id;
     private Timestamp datetime;
     private String message;
-    private Boolean isNew;
+    private Boolean readed;
 
     public Sms(){}
-    public Sms(Client client,int id,Timestamp datetime,String message,boolean isNew)
+    public Sms(Client client,int id,Timestamp datetime,String message,boolean readed)
     {
         this.client=client;
         this.id=id;
         this.datetime=datetime;
         this.message=message;
-        this.isNew=isNew;
+        this.readed=readed;
     }
 
     //Геттеры и сеттеры
@@ -26,11 +26,12 @@ public class Sms
     public int getId() {return id;}
     public Timestamp getDatetime() {return datetime;}
     public String getMessage() {return message;}
-    public boolean isIsNew() {return isNew;}
+    public boolean isNew() {return (this.id == null);}
     public void setClient(Client client) {this.client = client;}
     public void setId(int id) {this.id = id;}
     public void setDatetime(Timestamp datetime) {this.datetime = datetime;}
     public void setMessage(String message) {this.message = message;}
-    public void setIsNew(boolean aNew) {isNew = aNew;}
+    public void setReaded(Boolean readed) {this.readed = readed;}
+    public Boolean getReaded() {return readed;}
 
 }
